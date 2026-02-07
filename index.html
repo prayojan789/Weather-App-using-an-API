@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weather Now</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main class="app">
+			<header class="hero">
+				<h1>Weather Nepal</h1>
+				<p>Live conditions and short-term forecast for Nepal cities.</p>
+			</header>
+
+			<section class="panel">
+				<form id="weather-form" class="search" autocomplete="off">
+					<label class="sr-only" for="city-input">City</label>
+					<input
+						id="city-input"
+						name="city"
+						type="text"
+						placeholder="Enter Nepal city, e.g. Kathmandu"
+						required
+					/>
+					<button type="submit">Get Weather</button>
+				</form>
+
+				<div class="status" id="status" aria-live="polite"></div>
+
+				<div class="current" id="current" hidden>
+					<div>
+						<h2 id="place">--</h2>
+						<p id="desc">--</p>
+					</div>
+					<div class="temp">
+						<span id="temp">--</span>
+						<span class="unit">°C</span>
+					</div>
+					<div class="meta">
+						<span>Feels: <strong id="feels">--</strong>°C</span>
+						<span>Humidity: <strong id="humidity">--</strong>%</span>
+						<span>Wind: <strong id="wind">--</strong> m/s</span>
+					</div>
+				</div>
+
+				<div class="forecast" id="forecast" hidden>
+					<h3>Next 4 periods</h3>
+					<div class="forecast-grid" id="forecast-grid"></div>
+				</div>
+
+			</section>
+		</main>
+
+		<script src="spript.js"></script>
+	</body>
+</html>
