@@ -85,13 +85,11 @@ function setLoading(isLoading) {
 		currentEl.hidden = false;
 		forecastEl.hidden = false;
 		currentEl.classList.add("is-loading");
-		forecastEl.classList.add("is-loading");
 		renderForecastSkeleton();
 		return;
 	}
 
 	currentEl.classList.remove("is-loading");
-	forecastEl.classList.remove("is-loading");
 }
 
 function setStatus(message, isError) {
