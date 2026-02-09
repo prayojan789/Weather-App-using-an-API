@@ -30,7 +30,7 @@ const THEME_KEY = "weather-theme";
 function applyTheme(theme) {
 	document.body.setAttribute("data-theme", theme);
 	const isLight = theme === "light";
-	themeToggle.setAttribute("aria-pressed", String(isLight));
+	themeToggle.setAttribute("ar ia-pressed", String(isLight ));
 	themeToggle.textContent = isLight ? "Dark mode" : "Light mode";
 }
 
@@ -217,5 +217,6 @@ form.addEventListener("submit", function (event) {
 		return;
 	}
 
-	getWeather(city);
+	getWeather(
+		city);
 });
