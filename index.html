@@ -14,6 +14,7 @@
 						<h1>Weather Nepal</h1>
 						<p>Live conditions and short-term forecast for Nepal cities.</p>
 					</div>
+					<button id="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
 				</div>
 			</header>
 
@@ -50,6 +51,11 @@
 						<span>Wind: <strong id="wind">--</strong> m/s</span>
 					</div>
 				</div>
+
+				<section class="forecast" id="forecast" hidden>
+					<h3>Next hours</h3>
+					<div class="forecast-grid" id="forecast-grid"></div>
+				</section>
 			</section>
 		</main>
 

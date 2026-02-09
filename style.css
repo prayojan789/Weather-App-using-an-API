@@ -12,6 +12,18 @@
 	--shadow: 0 6px 16px rgba(2, 6, 23, 0.35);
 }
 
+body[data-theme="light"] {
+	--bg-1: #f8fafc;
+	--bg-2: #e2e8f0;
+	--accent: #1d4ed8;
+	--text: #0f172a;
+	--muted: #475569;
+	--panel: rgba(255, 255, 255, 0.9);
+	--panel-strong: rgba(255, 255, 255, 0.95);
+	--border: rgba(15, 23, 42, 0.12);
+	--shadow: 0 6px 16px rgba(15, 23, 42, 0.12);
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -47,6 +59,21 @@ body {
 	justify-content: space-between;
 	gap: 16px;
 	flex-wrap: wrap;
+}
+
+#theme-toggle {
+	padding: 10px 16px;
+	border-radius: 999px;
+	border: 1px solid var(--border);
+	background: transparent;
+	color: var(--text);
+	font-weight: 600;
+	cursor: pointer;
+}
+
+#theme-toggle:focus-visible {
+	outline: none;
+	box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
 }
 
 .hero h1 {
